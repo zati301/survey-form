@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <!-- TITLE(1), DESC (2) -->
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        This is a short survey form and takes a few minutes to fill.
+      </p>
+
+      <!-- FORM (3,10,11) -->
+      <form id="survey-form">
+
+        <!-- NAME (4), EMAIL (5,6) -->
+        <fieldset class="user-info">
+          <legend class="legend">Basic info</legend>
+            <label id="name-label" for="name">
+            Name: <input type="text" 
+            id="name" placeholder="Enter your name" required />
+          </label>
+
+          <label id="email-label" for="email">Email: 
+            <input type="email" id="email" 
+            placeholder="Enter a valid email address" required />
+          </label>
+
+          <!-- NUMBER (7,8,9) -->
+          <label id="number-label" for="number">Age: 
+            <input type="number" id="number" 
+            min="13" max="120" placeholder="Enter your age" />
+            </label>
+          </fieldset>
+
+        <!-- OPTIONS(12) -->
+        <fieldset class="ratings">
+          <legend class="legend">Where did you hear from us? (Required)</legend>
+            <label id="dropdown-label" for="dropdown"> Please select one
+              <select id="dropdown">
+                <option>Facebook</option>
+                <option>Forum</option>
+                <option>Twitter</option>
+                <option>Youtube</option>
+                <option>Others</option>
+              </select>
+            </label>
+        </fieldset>  
+
+        <fieldset class="subs">
+          <legend class="legend">Are you currently subscribed to any of our social media? (Required)</legend>
+
+          <label for="yes"><input type="radio" value="yes" 
+            name="radio" id="yes" checked /> Yes</label>
+          <label for="no"><input type="radio" value="no" 
+            name="radio" id="no" /> No</label>
+          </fieldset>
+
+        <fieldset class="platform">
+          <legend class="legend">Please select your preferred platform: (Can be more than one)</legend>
+          <label for="pc"><input type="checkbox" id="pc" value="pc" checked /> PC</label>
+          <label for="mobile"><input type="checkbox" id="mobile" value="mobile" /> Mobile</label>
+          <label for="tablet"><input type="checkbox" id="tablet" value="tablet" /> Tablet</label>
+        </fieldset>
+
+        <fieldset class="user-comments">
+          <label for="comments">Do you have any suggestions? <em>(Optional)</em>
+            <textarea rows="5" cols="50" id="comments" placeholder="I would love to learn more about.."></textarea>
+          </label>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit"/>
+
+      </form>
+    </main>
+  </body>
+</html>

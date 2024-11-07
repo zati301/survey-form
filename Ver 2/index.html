@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="bg">
+        <!-- HEADER -->
+      <header>
+        <h1>MySite Survey Form</h1>
+        <p>This form takes 3-5 minutes to fill. Thank you for your time!</p>
+      </header>
+  
+      <!-- MAIN -->
+      <main>
+          <form>
+              <fieldset>
+              <!-- USER INFO -->
+              <label for="name" id="label-name">Name <input type="text" id="name" name="name" placeholder="Enter your name" required /></label>
+              <label for="email" id="label-email">Email <input type="email" id="email" name="email" 
+              placeholder="Enter a valid email address" required /></label>
+              <label for="number" id="label-age">Age (optional) <input type="number" id="number" value="number" name="number"
+              placeholder="Enter your age" min="13" max="120" /></label>
+  
+              <!-- DROPDOWN -->
+              <label for="role" id="label-dropdown1"> Which option best describes your current role?
+              <select id="role">
+                  <option class="roles" value=""> Select current role</option>
+                  <option class="roles" value="1">Student</option>
+                  <option class="roles" value="2">Full Time Job</option>
+                  <option class="roles" value="3">Full Time Learner</option>
+                  <option class="roles" value="4">Prefer not to say</option>
+                  <option class="roles" value="5">Other</option>
+              </select>
+              </label>
+              
+              <!-- RADIO -->
+              <p class="radio-desc">Would you recommend MySite to a friend?</p>
+              <label for="definitely" class="radio-opt"><input class="inline" type="radio" id="definitely" name="recommend" /> Definitely</label>
+              <label for="maybe" class="radio-opt"><input class="inline" type="radio" id="maybe" name="recommend" checked/> Maybe</label>
+              <label for="notsure" class="radio-opt"><input class="inline" type="radio" id="notsure" name="recommend" /> Not Sure</label>
+  
+              <!-- DROPDOWN -->
+              <label for="fav" id="label-dropdown2"> What is your favorite feature of MySite?
+              <select id="fav">
+                  <option class="favs" value="">Select an option</option>
+                  <option class="favs" value="1">Challenges</option>
+                  <option class="favs" value="2">Projects</option>
+                  <option class="favs" value="3">Community</option>
+                  <option class="favs" value="4">Open Source</option>
+                  <option class="favs" value="5">Other</option>
+              </select>
+              </label>
+  
+              <!-- CHECKBOX -->
+              <p class="checkbox-desc">What would you like to see improved? (Check all that apply)</p>
+              <label for="front-end-projects" class="cb-opt"><input class="inline" type="checkbox" name="front-end-projects" id="front-end-projects" /> Front-end Projects</label>
+              <label for="back-end-projects" class="cb-opt"><input class="inline" type="checkbox" name="back-end-projects" id="back-end-projects" /> Back-end Projects</label>
+              <label for="data-visualization" class="cb-opt"><input class="inline" type="checkbox" name="data-visualization" id="data-visualization" /> Data Visualization</label>
+              <label for="challenges" class="cb-opt"><input class="inline" type="checkbox" name="challenges" id="challenges" /> Challenges</label>
+              <label for="pen-source-community" class="cb-opt"><input class="inline" type="checkbox" name="open-source-community" id="open-source-community" /> Open Source Community</label>
+              <label for="gitter-help-rooms" class="cb-opt"><input class="inline" type="checkbox" name="gitter-help-rooms" id="gitter-help-rooms" /> Gitter help rooms</label>
+              <label for="videos" class="cb-opt"><input class="inline" type="checkbox" name="videos" id="videos" /> Videos</label>
+              <label for="city-meetups" class="cb-opt"><input class="inline" type="checkbox" name="city-meetups" id="city-meetups" /> City Meetups</label>
+              <label for="wiki" class="cb-opt"><input class="inline" type="checkbox" name="wiki" id="wiki" /> Wiki</label>
+              <label for="forum" class="cb-opt"><input class="inline" type="checkbox" name="forum" id="forum" /> Forum</label>
+              <label for="additonal-courses" class="cb-opt"><input class="inline" type="checkbox" name="additonal-courses" id="additonal-courses" /> Additional Courses</label>
+  
+              <!-- TEXTAREA -->
+              <label for="comments" id="textarea-label">Any comments or suggestions?
+              <textarea id ="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+              </label>
+  
+              </fieldset>
+            <input type="submit" value="Submit" />
+          </form>
+      </main>
+  
+      <!-- FOOTER -->
+      <footer>
+        <p>This is practice website to make a sample survey form whrere I try to duplicate this <a href="https://survey-form.freecodecamp.rocks/">form</a>.</p>
+      </footer>
+
+    </div>
+  </body>
+</html>

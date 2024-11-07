@@ -1,0 +1,82 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #272845;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  main {
+    color:white;
+  }
+  
+  h1, p {
+    margin: 10px auto;
+    height: 35px;
+    text-align: center;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  
+  form {
+    width: 100%;
+    margin: 10px auto;
+  }
+  
+  fieldset {
+    margin: 10px auto 15px auto;
+    padding: 10px 5px;
+  }
+  
+  .legend {
+    padding-left: 5px;
+  }
+  
+  #name-label, #email-label, #number-label {
+    margin: 10px 5px;
+  }
+  
+  #dropdown-label {
+    display: block;
+    margin-right: 100px;
+  }
+  
+  .user-info input {
+    min-width:200px;
+    width: 100%;
+    margin: 2px;
+  }
+  
+  #yes, #no, #dropdown-label {
+    margin: 10px 5px;
+  }
+  
+  .user-comments {
+    border: none;
+  }
+  
+  textarea {
+    margin-top: 10px;
+    min-width: 100px;
+    width: 100%;
+  }
+  
+  input, textarea {
+    padding: 5px 3px;
+  }
+  
+  #submit {
+    display: block;
+    margin: 2px auto;
+    padding: 5px;
+    font-size: 22px;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+  }
